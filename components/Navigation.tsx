@@ -4,15 +4,18 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslations } from 'next-intl';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
 export function Navigation() {
+  const t = useTranslations('Navigation');
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: 'Fresh Produce', href: '#fresh-produce' },
-    { label: 'Snacks & White Label', href: '#snacks' },
-    { label: 'Our Story', href: '#sourcing' },
-    { label: 'Contact', href: '#contact' },
+    { label: t('fresh'), href: '#fresh-produce' },
+    { label: t('snacks'), href: '#snacks' },
+    { label: t('story'), href: '#sourcing' },
+    { label: t('contact'), href: '#contact' },
   ];
 
   return (
@@ -43,12 +46,13 @@ export function Navigation() {
           </div>
 
           <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher />
             <Button
               asChild
               variant="default"
               className="bg-primary hover:bg-primary/90"
             >
-              <a href="#contact">Join Us</a>
+              <a href="#contact">{t('join')}</a>
             </Button>
           </div>
 
@@ -85,7 +89,7 @@ export function Navigation() {
                 variant="default"
                 className="w-full bg-primary hover:bg-primary/90"
               >
-                <a href="#contact">Join Us</a>
+                <a href="#contact">{t('join')}</a>
               </Button>
             </div>
           </div>

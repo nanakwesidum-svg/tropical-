@@ -1,33 +1,36 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { Card } from '@/components/ui/card';
-import { 
-  Leaf, 
-  Cpu, 
-  TrendingUp, 
-  ArrowRight 
+import {
+  Leaf,
+  Cpu,
+  TrendingUp,
+  ArrowRight
 } from 'lucide-react';
 
 export function BridgeConcept() {
+  const t = useTranslations('Bridge');
+
   const pillars = [
     {
       icon: Leaf,
-      title: 'Agricultural Heritage',
-      description: 'Grounded in local farmland, backed by experienced African partners in Ghana and Kenya.',
+      title: t('pillars.heritage.title'),
+      description: t('pillars.heritage.description'),
       color: 'from-success/20 to-success/10',
       iconColor: 'text-success',
     },
     {
       icon: Cpu,
-      title: 'Technology Integration',
-      description: 'Digital twins, blockchain traceability, EUDR compliance, and precision agriculture.',
+      title: t('pillars.tech.title'),
+      description: t('pillars.tech.description'),
       color: 'from-secondary/20 to-secondary/10',
       iconColor: 'text-secondary',
     },
     {
       icon: TrendingUp,
-      title: 'Impact Investing',
-      description: 'Deploying best practices as a vehicle for sustainable economic transformation.',
+      title: t('pillars.impact.title'),
+      description: t('pillars.impact.description'),
       color: 'from-accent/20 to-accent/10',
       iconColor: 'text-accent',
     },
@@ -39,10 +42,10 @@ export function BridgeConcept() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            The Bridge Concept
+            {t('header.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Three markets, one vision: connecting Africa's agricultural potential with Europe's market demand through operational excellence.
+            {t('header.description')}
           </p>
         </div>
 
@@ -53,16 +56,16 @@ export function BridgeConcept() {
             <div className="flex-1 text-center">
               <div className="bg-gradient-to-br from-primary to-primary/80 rounded-lg p-6 text-white mb-3 transform hover:scale-105 transition-transform">
                 <div className="text-4xl mb-2">🌍</div>
-                <h3 className="font-bold text-lg">Africa</h3>
-                <p className="text-sm text-white/80">Ghana & Kenya</p>
+                <h3 className="font-bold text-lg">{t('visualization.africa.label')}</h3>
+                <p className="text-sm text-white/80">{t('visualization.africa.sub')}</p>
               </div>
-              <p className="text-sm text-muted-foreground">Production Hub</p>
+              <p className="text-sm text-muted-foreground">{t('visualization.africa.role')}</p>
             </div>
 
             {/* Arrow */}
             <div className="hidden lg:flex items-center gap-2 text-accent mb-12">
               <ArrowRight className="w-6 h-6" />
-              <span className="font-semibold">Via</span>
+              <span className="font-semibold">{t('visualization.via')}</span>
               <ArrowRight className="w-6 h-6" />
             </div>
 
@@ -70,16 +73,16 @@ export function BridgeConcept() {
             <div className="flex-1 text-center">
               <div className="bg-gradient-to-br from-accent to-accent/80 rounded-lg p-6 text-white mb-3 transform hover:scale-105 transition-transform">
                 <div className="text-4xl mb-2">🇪🇸</div>
-                <h3 className="font-bold text-lg">Spain</h3>
-                <p className="text-sm text-white/80">Gateway Hub</p>
+                <h3 className="font-bold text-lg">{t('visualization.spain.label')}</h3>
+                <p className="text-sm text-white/80">{t('visualization.spain.sub')}</p>
               </div>
-              <p className="text-sm text-muted-foreground">Distribution & QA</p>
+              <p className="text-sm text-muted-foreground">{t('visualization.spain.role')}</p>
             </div>
 
             {/* Arrow */}
             <div className="hidden lg:flex items-center gap-2 text-accent mb-12">
               <ArrowRight className="w-6 h-6" />
-              <span className="font-semibold">To</span>
+              <span className="font-semibold">{t('visualization.to')}</span>
               <ArrowRight className="w-6 h-6" />
             </div>
 
@@ -87,17 +90,17 @@ export function BridgeConcept() {
             <div className="flex-1 text-center">
               <div className="bg-gradient-to-br from-secondary to-secondary/80 rounded-lg p-6 text-white mb-3 transform hover:scale-105 transition-transform">
                 <div className="text-4xl mb-2">🇪🇺</div>
-                <h3 className="font-bold text-lg">Europe</h3>
-                <p className="text-sm text-white/80">Premium Markets</p>
+                <h3 className="font-bold text-lg">{t('visualization.europe.label')}</h3>
+                <p className="text-sm text-white/80">{t('visualization.europe.sub')}</p>
               </div>
-              <p className="text-sm text-muted-foreground">Final Distribution</p>
+              <p className="text-sm text-muted-foreground">{t('visualization.europe.role')}</p>
             </div>
           </div>
 
           {/* Mobile arrows */}
           <div className="lg:hidden text-center text-accent mb-6">
             <div className="flex justify-center gap-2 text-sm font-semibold mb-4">
-              Africa → Spain → Europe
+              {t('visualization.africa.label')} → {t('visualization.spain.label')} → {t('visualization.europe.label')}
             </div>
           </div>
         </div>
@@ -107,7 +110,7 @@ export function BridgeConcept() {
           {pillars.map((pillar, index) => {
             const Icon = pillar.icon;
             return (
-              <Card 
+              <Card
                 key={index}
                 className={`bg-gradient-to-br ${pillar.color} border-border/50 p-6 hover:border-primary/50 transition-all hover:shadow-lg transform hover:-translate-y-1`}
               >
@@ -129,16 +132,16 @@ export function BridgeConcept() {
         <Card className="mt-12 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/30 p-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">Operational</div>
-              <p className="text-muted-foreground">Mastery through precision and local expertise</p>
+              <div className="text-3xl font-bold text-primary mb-2">{t('values.operational')}</div>
+              <p className="text-muted-foreground">{t('values.mastery')}</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-accent mb-2">Solidarity</div>
-              <p className="text-muted-foreground">Strong local partnerships built on trust</p>
+              <div className="text-3xl font-bold text-accent mb-2">{t('values.solidarity_title')}</div>
+              <p className="text-muted-foreground">{t('values.solidarity_desc')}</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-secondary mb-2">Technology</div>
-              <p className="text-muted-foreground">Digital transformation for transparency</p>
+              <div className="text-3xl font-bold text-secondary mb-2">{t('values.tech_title')}</div>
+              <p className="text-muted-foreground">{t('values.tech_desc')}</p>
             </div>
           </div>
         </Card>

@@ -1,11 +1,11 @@
-'use client';
-
+import { useTranslations } from 'next-intl';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Mail, Calendar, Users } from 'lucide-react';
 import { useState } from 'react';
 
 export function CallToAction() {
+  const t = useTranslations('CTA');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,27 +25,27 @@ export function CallToAction() {
   const audiences = [
     {
       icon: Users,
-      title: 'For Distributors',
-      description: 'Access premium African tropical fruits with guaranteed traceability and seasonal supply planning.',
-      cta: 'View Catalog',
+      title: t('audiences.distributors.title'),
+      description: t('audiences.distributors.desc'),
+      cta: t('audiences.distributors.button'),
       link: '#products',
       color: 'from-primary/20 to-primary/10',
       iconColor: 'text-primary',
     },
     {
       icon: Calendar,
-      title: 'For Investors',
-      description: 'Participate in high-growth export opportunity with measurable impact and transparent operations.',
-      cta: 'Schedule Call',
+      title: t('audiences.investors.title'),
+      description: t('audiences.investors.desc'),
+      cta: t('audiences.investors.button'),
       link: '#contact',
       color: 'from-accent/20 to-accent/10',
       iconColor: 'text-accent',
     },
     {
       icon: Mail,
-      title: 'For Tech Partners',
-      description: 'Integrate your traceability, AI, or supply chain solutions into our platform.',
-      cta: 'Explore APIs',
+      title: t('audiences.tech.title'),
+      description: t('audiences.tech.desc'),
+      cta: t('audiences.tech.button'),
       link: '#contact',
       color: 'from-secondary/20 to-secondary/10',
       iconColor: 'text-secondary',
@@ -58,10 +58,10 @@ export function CallToAction() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Join the Trade Bridge
+            {t('header.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Whether you source premium African exports, invest in growth, or enable technology - we have an opportunity for you.
+            {t('header.description')}
           </p>
         </div>
 
@@ -97,12 +97,12 @@ export function CallToAction() {
         {/* Contact Form */}
         <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20 p-8 mb-12">
           <h3 className="text-2xl font-bold text-foreground mb-6">
-            Get in Touch
+            {t('form.title')}
           </h3>
           <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">
-                Name
+                {t('form.labels.name')}
               </label>
               <input
                 type="text"
@@ -112,12 +112,12 @@ export function CallToAction() {
                   setFormData({ ...formData, name: e.target.value })
                 }
                 className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-primary transition-colors"
-                placeholder="Your name"
+                placeholder={t('form.placeholders.name')}
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">
-                Email
+                {t('form.labels.email')}
               </label>
               <input
                 type="email"
@@ -127,12 +127,12 @@ export function CallToAction() {
                   setFormData({ ...formData, email: e.target.value })
                 }
                 className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-primary transition-colors"
-                placeholder="your@email.com"
+                placeholder={t('form.placeholders.email')}
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">
-                Company
+                {t('form.labels.company')}
               </label>
               <input
                 type="text"
@@ -141,12 +141,12 @@ export function CallToAction() {
                   setFormData({ ...formData, company: e.target.value })
                 }
                 className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-primary transition-colors"
-                placeholder="Your company"
+                placeholder={t('form.placeholders.company')}
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">
-                I am interested in
+                {t('form.labels.interest')}
               </label>
               <select
                 value={formData.interest}
@@ -155,10 +155,10 @@ export function CallToAction() {
                 }
                 className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-primary transition-colors"
               >
-                <option value="distributor">Product Distribution</option>
-                <option value="investor">Investment Opportunity</option>
-                <option value="tech">Tech Partnership</option>
-                <option value="other">Other</option>
+                <option value="distributor">{t('form.options.distributor')}</option>
+                <option value="investor">{t('form.options.investor')}</option>
+                <option value="tech">{t('form.options.tech')}</option>
+                <option value="other">{t('form.options.other')}</option>
               </select>
             </div>
             <div className="md:col-span-2">
@@ -166,11 +166,11 @@ export function CallToAction() {
                 type="submit"
                 className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 rounded-lg transition-colors"
               >
-                Send Message
+                {t('form.submit')}
               </Button>
               {submitted && (
                 <p className="text-success text-sm mt-3 text-center">
-                  Thank you! We'll be in touch within 24 hours.
+                  {t('form.success')}
                 </p>
               )}
             </div>

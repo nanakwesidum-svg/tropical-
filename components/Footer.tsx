@@ -1,9 +1,9 @@
-'use client';
-
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Mail, Linkedin, Twitter, Globe } from 'lucide-react';
+import { Mail, Linkedin, Twitter } from 'lucide-react';
 
 export function Footer() {
+  const t = useTranslations('Footer');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -22,7 +22,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-white/70 text-sm mb-6">
-              Premium tropical fruits and snacks from Ghana and Kenya, delivered fresh to European markets. Fair trade, transparent sourcing, exceptional quality.
+              {t('brand_desc')}
             </p>
             <div className="flex gap-4">
               <a
@@ -51,21 +51,21 @@ export function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="font-semibold mb-4">Products</h3>
+            <h3 className="font-semibold mb-4">{t('sections.products')}</h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
                 <a href="#products" className="hover:text-accent transition-colors">
-                  Tropical Fruits
+                  {t('links.tropical')}
                 </a>
               </li>
               <li>
                 <a href="#products" className="hover:text-accent transition-colors">
-                  Specialty Crops
+                  {t('links.specialty')}
                 </a>
               </li>
               <li>
                 <a href="#products" className="hover:text-accent transition-colors">
-                  Value-Added
+                  {t('links.value_added')}
                 </a>
               </li>
             </ul>
@@ -73,21 +73,21 @@ export function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="font-semibold mb-4">Company</h3>
+            <h3 className="font-semibold mb-4">{t('sections.company')}</h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
                 <a href="#bridge" className="hover:text-accent transition-colors">
-                  About Us
+                  {t('links.about')}
                 </a>
               </li>
               <li>
                 <a href="#market" className="hover:text-accent transition-colors">
-                  Market Insights
+                  {t('links.market')}
                 </a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-accent transition-colors">
-                  Contact
+                  {t('links.contact')}
                 </a>
               </li>
             </ul>
@@ -95,21 +95,21 @@ export function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
+            <h3 className="font-semibold mb-4">{t('sections.legal')}</h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
                 <Link href="#" className="hover:text-accent transition-colors">
-                  Privacy Policy
+                  {t('links.privacy')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-accent transition-colors">
-                  Terms of Service
+                  {t('links.terms')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-accent transition-colors">
-                  Compliance
+                  {t('links.compliance')}
                 </Link>
               </li>
             </ul>
@@ -122,17 +122,17 @@ export function Footer() {
             <div className="text-center">
               <div className="text-2xl mb-2">🇬🇭</div>
               <p className="text-sm font-semibold">Ghana</p>
-              <p className="text-xs text-white/60">Production Hub</p>
+              <p className="text-xs text-white/60">{t('locations.ghana_label')}</p>
             </div>
             <div className="text-center">
               <div className="text-2xl mb-2">🇪🇸</div>
               <p className="text-sm font-semibold">Spain</p>
-              <p className="text-xs text-white/60">Distribution Gateway</p>
+              <p className="text-xs text-white/60">{t('locations.spain_label')}</p>
             </div>
             <div className="text-center">
               <div className="text-2xl mb-2">🇰🇪</div>
               <p className="text-sm font-semibold">Kenya</p>
-              <p className="text-xs text-white/60">Production & Processing</p>
+              <p className="text-xs text-white/60">{t('locations.kenya_label')}</p>
             </div>
           </div>
         </div>
@@ -140,10 +140,12 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-sm text-white/70">
           <p>
-            &copy; {currentYear} Afro-Iberian Trade Bridge. All rights reserved.
+            &copy; {currentYear} Afro-Iberian Trade Bridge. {t('rights')}
           </p>
           <p className="flex items-center gap-1">
-            Built with <span className="text-accent">♥</span> for impact
+            {t.rich('built_with', {
+              heart: (chunks) => <span className="text-accent">♥</span>
+            })}
           </p>
         </div>
       </div>

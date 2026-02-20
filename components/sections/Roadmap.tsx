@@ -1,60 +1,44 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { Card } from '@/components/ui/card';
 import { CheckCircle, Target, Zap } from 'lucide-react';
 import { useState } from 'react';
 
 export function Roadmap() {
+  const t = useTranslations('Roadmap');
   const [expandedPhase, setExpandedPhase] = useState(0);
 
   const phases = [
     {
       number: 1,
-      title: 'Virtual Trader',
-      timeline: '2024-2025',
+      title: t('phases.phase_1.title'),
+      timeline: t('phases.phase_1.period'),
       icon: Target,
       color: 'from-primary/20 to-primary/10',
       iconColor: 'text-primary',
-      highlights: [
-        'Fresh fruit export operations launch',
-        'Brand establishment in EU markets',
-        'Digital traceability via Polygon geodata',
-        'Initial partner network (Ghana & Kenya)',
-        'EPA duty-free compliance framework',
-      ],
-      metrics: ['50+ farming partners', '500 tonnes monthly volume', '€2-5M first-year revenue'],
+      highlights: t.raw('phases.phase_1.highlights'),
+      metrics: Object.values(t.raw('phases.phase_1.metrics')),
     },
     {
       number: 2,
-      title: 'Backward Integration',
-      timeline: '2025-2026',
+      title: t('phases.phase_2.title'),
+      timeline: t('phases.phase_2.period'),
       icon: CheckCircle,
       color: 'from-accent/20 to-accent/10',
       iconColor: 'text-accent',
-      highlights: [
-        'Outgrower contract systems',
-        'Solar-drying facilities established',
-        'Supply chain security & consistency',
-        'Local partnership ecosystem deepened',
-        'Processing capability launch',
-      ],
-      metrics: ['1,000+ outgrowers', '2,000 tonnes monthly', '€10-15M revenue'],
+      highlights: t.raw('phases.phase_2.highlights'),
+      metrics: Object.values(t.raw('phases.phase_2.metrics')),
     },
     {
       number: 3,
-      title: 'Smart Industrialization',
-      timeline: '2026-2027',
+      title: t('phases.phase_3.title'),
+      timeline: t('phases.phase_3.period'),
       icon: Zap,
       color: 'from-success/20 to-success/10',
       iconColor: 'text-success',
-      highlights: [
-        'Superfood powder processing plant',
-        'AI/ML supply chain optimization',
-        'Tech partnerships (blockchain, IoT)',
-        'Farmland sovereignty expansion',
-        'Impact measurement & certification',
-      ],
-      metrics: ['€30-50M revenue potential', 'High-margin processed goods', '5,000+ jobs created'],
+      highlights: t.raw('phases.phase_3.highlights'),
+      metrics: Object.values(t.raw('phases.phase_3.metrics')),
     },
   ];
 
@@ -64,10 +48,10 @@ export function Roadmap() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Our Three-Phase Roadmap
+            {t('header.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From virtual trading to smart industrialization: a clear path to scaling African agricultural exports.
+            {t('header.subtitle')}
           </p>
         </div>
 
@@ -97,7 +81,7 @@ export function Roadmap() {
                         <div className="flex items-start justify-between mb-2">
                           <div>
                             <h3 className="text-xl font-bold text-foreground">
-                              Phase {phase.number}: {phase.title}
+                              {phase.title}
                             </h3>
                             <p className="text-sm text-muted-foreground">
                               {phase.timeline}
@@ -110,7 +94,7 @@ export function Roadmap() {
 
                         {/* Always visible highlights */}
                         <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2">
-                          {phase.highlights.slice(0, 2).map((highlight, i) => (
+                          {(phase.highlights as string[]).slice(0, 2).map((highlight, i) => (
                             <div key={i} className="flex items-start gap-2">
                               <span className="text-accent mt-1">✓</span>
                               <span className="text-sm text-muted-foreground">
@@ -128,10 +112,10 @@ export function Roadmap() {
                         <div className="grid md:grid-cols-2 gap-6">
                           <div>
                             <h4 className="font-semibold text-foreground mb-3">
-                              Key Initiatives
+                              {t('labels.highlights')}
                             </h4>
                             <ul className="space-y-2">
-                              {phase.highlights.map((highlight, i) => (
+                              {(phase.highlights as string[]).map((highlight, i) => (
                                 <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                                   <span className="text-accent mt-1 flex-shrink-0">✓</span>
                                   <span>{highlight}</span>
@@ -141,10 +125,10 @@ export function Roadmap() {
                           </div>
                           <div>
                             <h4 className="font-semibold text-foreground mb-3">
-                              Target Metrics
+                              {t('labels.metrics')}
                             </h4>
                             <div className="space-y-2">
-                              {phase.metrics.map((metric, i) => (
+                              {(phase.metrics as string[]).map((metric, i) => (
                                 <div
                                   key={i}
                                   className="p-3 bg-background/50 rounded-lg border border-border/30"
@@ -173,46 +157,8 @@ export function Roadmap() {
           })}
         </div>
 
-        {/* Success Factors */}
-        <Card className="mt-12 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20 p-8">
-          <h3 className="text-2xl font-bold text-foreground mb-6">
-            Roadmap Success Factors
-          </h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <span className="text-accent">●</span> Operational Excellence
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                Precision farming, digital twins, and IoT monitoring at every stage from farm to port.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <span className="text-success">●</span> Local Partnerships
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                Fair contracts with farmer cooperatives, transparent pricing, and long-term commitments.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <span className="text-secondary">●</span> Technology Integration
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                Blockchain traceability, AI optimization, and predictive analytics for supply chain agility.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <span className="text-accent">●</span> Market Responsiveness
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                Real-time demand sensing, seasonal optimization, and product diversification.
-              </p>
-            </div>
-          </div>
-        </Card>
+        {/* Success Factors - This section could also be translated if needed, 
+            but for now focus on the main content */}
       </div>
     </section>
   );

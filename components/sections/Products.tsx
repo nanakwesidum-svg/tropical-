@@ -1,84 +1,85 @@
-'use client';
-
+import { useTranslations } from 'next-intl';
 import { Card } from '@/components/ui/card';
 
 export function Products() {
+  const t = useTranslations('Portfolio');
+
   const productLines = [
     {
-      name: 'Tropical Fruits',
+      name: t('tropical.title'),
       products: [
         {
           icon: '🧡',
-          name: 'Papayas',
-          growth: '+14% CAGR',
-          value: '$805/tonne avg',
-          description: 'Fresh & processed; Green papaya segment rising in EU',
+          name: t('tropical.papayas.name'),
+          growth: t('tropical.papayas.growth'),
+          value: t('tropical.papayas.value'),
+          description: t('tropical.papayas.description'),
         },
         {
           icon: '🥭',
-          name: 'Mangoes',
-          growth: '+7% CAGR',
-          value: '$1,200-$1,300/tonne',
-          description: 'Premium varieties; High demand in Germany & UK',
+          name: t('tropical.mangoes.name'),
+          growth: t('tropical.mangoes.growth'),
+          value: t('tropical.mangoes.value'),
+          description: t('tropical.mangoes.description'),
         },
         {
           icon: '❤️',
-          name: 'Passion Fruit',
-          growth: '+38% (5yr)',
-          value: '$3,200/tonne',
-          description: 'Exclusive exotic; €88M EU imports, Netherlands hub',
+          name: t('tropical.passion.name'),
+          growth: t('tropical.passion.growth'),
+          value: t('tropical.passion.value'),
+          description: t('tropical.passion.description'),
         },
       ],
     },
     {
-      name: 'Specialty Crops',
+      name: t('specialty.title'),
       products: [
         {
           icon: '🍫',
-          name: 'Cocoa',
-          growth: 'Stable, premium',
-          value: '+50-100% processing margin',
-          description: '70% of African world supply; Value-added processing focus',
+          name: t('specialty.cocoa.name'),
+          growth: t('specialty.cocoa.growth'),
+          value: t('specialty.cocoa.value'),
+          description: t('specialty.cocoa.description'),
         },
         {
           icon: '💛',
-          name: 'Cashews',
-          growth: 'Growing supply',
-          value: 'Value multiplier',
-          description: 'Growing African production; Processing premiums',
+          name: t('specialty.cashews.name'),
+          growth: t('specialty.cashews.growth'),
+          value: t('specialty.cashews.value'),
+          description: t('specialty.cashews.description'),
         },
         {
           icon: '✨',
-          name: 'Shea Butter',
-          growth: 'Rising demand',
-          value: 'Premium organic segment',
-          description: 'EU organic market growing; Cosmetics & food grade',
+          name: t('specialty.shea.name'),
+          growth: t('specialty.shea.growth'),
+          value: t('specialty.shea.value'),
+          description: t('specialty.shea.description'),
         },
       ],
     },
     {
-      name: 'Value-Added Products',
+      name: t('value_added.title'),
       products: [
         {
           icon: '🌾',
-          name: 'Superfood Powders',
-          growth: '+38% premium',
-          value: '+65-100% margin',
-          description: 'Cocoa, mango, banana powders; Health-conscious EU buyers',
+          name: t('value_added.superfood.name'),
+          growth: t('value_added.superfood.growth'),
+          value: t('value_added.superfood.value'),
+          description: t('value_added.superfood.description'),
         },
         {
           icon: '🧂',
-          name: 'Dried & Concentrated',
-          growth: 'Expanding category',
-          value: '+55% margin',
-          description: 'Dried mango, pineapple concentrate, papaya chips',
+          name: t('value_added.dried.name'),
+          growth: t('value_added.dried.growth'),
+          value: t('value_added.dried.value'),
+          description: t('value_added.dried.description'),
         },
         {
           icon: '⚡',
-          name: 'Precision-Processed',
-          growth: 'Tech-enabled',
-          value: 'Premium pricing',
-          description: 'Solar-dried, digitally tracked, EUDR compliant',
+          name: t('value_added.precision.name'),
+          growth: t('value_added.precision.growth'),
+          value: t('value_added.precision.value'),
+          description: t('value_added.precision.description'),
         },
       ],
     },
@@ -90,10 +91,10 @@ export function Products() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Our Export Portfolio
+            {t('header.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Three product categories spanning fresh exports to high-margin value-added goods, all backed by operational mastery and market data.
+            {t('header.description')}
           </p>
         </div>
 
@@ -104,7 +105,7 @@ export function Products() {
               <span className="w-1 h-8 bg-accent rounded"></span>
               {category.name}
             </h3>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               {category.products.map((product, prodIdx) => (
                 <Card
@@ -131,13 +132,13 @@ export function Products() {
                     {/* Metrics */}
                     <div className="space-y-2 pt-4 border-t border-border/30">
                       <div className="flex justify-between items-center">
-                        <span className="text-xs text-muted-foreground">Growth</span>
+                        <span className="text-xs text-muted-foreground">{t('labels.growth')}</span>
                         <span className="text-sm font-semibold text-accent">
                           {product.growth}
                         </span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-xs text-muted-foreground">Unit Value</span>
+                        <span className="text-xs text-muted-foreground">{t('labels.unit_value')}</span>
                         <span className="text-sm font-semibold text-success">
                           {product.value}
                         </span>
@@ -153,16 +154,16 @@ export function Products() {
         {/* Call to Action */}
         <Card className="bg-gradient-to-r from-primary to-secondary text-white p-8 text-center">
           <h3 className="text-2xl font-bold mb-3">
-            Ready to Source Premium African Exports?
+            {t('cta.title')}
           </h3>
           <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-            Whether you're a distributor seeking reliable supply, an investor exploring growth opportunities, or a tech partner enabling transparency - we have a portfolio for you.
+            {t('cta.description')}
           </p>
           <a
             href="#contact"
             className="inline-block bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
           >
-            Explore Partnerships
+            {t('cta.button')}
           </a>
         </Card>
       </div>

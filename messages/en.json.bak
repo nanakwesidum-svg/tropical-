@@ -1,0 +1,142 @@
+{
+  "Hero": {
+    "badge": "Direct from Africa to Europe",
+    "title": "Premium {accent} & Snacks",
+    "accent": "Tropical Fruit",
+    "description": "Exceptional quality mangoes, papayas, passion fruit, specialty crops, and premium snacks—direct from Ghana and Kenya via our Spain hub to European distributors and retailers.",
+    "cta_products": "Explore Products",
+    "cta_partnership": "Request Partnership",
+    "stat_products": "12+",
+    "stat_products_label": "Premium Products",
+    "stat_lines": "3",
+    "stat_lines_label": "Business Lines",
+    "stat_supply": "Year-round",
+    "stat_supply_label": "Supply Available",
+    "stat_white_label": "White Label",
+    "stat_white_label_label": "B2B Options"
+  },
+  "Products": {
+    "categories": {
+      "fresh": "Fresh Produce",
+      "dried": "Dried & Processed",
+      "snacks": "Snacks & B2B"
+    },
+    "fresh": {
+      "mango": {
+        "name": "Mangoes",
+        "origin": "Ghana",
+        "varieties": "Tommy Atkins, Kent",
+        "season": "Dec - May",
+        "specs": "Premium size, Golden color, Brix 14-16",
+        "capacity": "20-40 tonnes/month"
+      },
+      "papaya": {
+        "name": "Papayas",
+        "origin": "Kenya & Ghana",
+        "varieties": "Green & Yellow",
+        "season": "Year-round",
+        "specs": "Medium size, Sweet flesh, Optimum ripeness",
+        "capacity": "15-30 tonnes/month"
+      },
+      "passion-fruit": {
+        "name": "Passion Fruit",
+        "origin": "Kenya",
+        "varieties": "Purple Passion",
+        "season": "Feb - Oct",
+        "specs": "Premium grade, High acidity, Fresh pulp",
+        "capacity": "5-15 tonnes/month"
+      },
+      "avocado": {
+        "name": "Avocados",
+        "origin": "Kenya",
+        "varieties": "Hass",
+        "season": "June - Oct",
+        "specs": "Perfect ripeness, Creamy flesh, High yield",
+        "capacity": "10-25 tonnes/month"
+      },
+      "pineapple": {
+        "name": "Pineapples",
+        "origin": "Ghana",
+        "varieties": "Smooth Cayenne",
+        "season": "Year-round",
+        "specs": "Golden exterior, Sweet taste, 1.5-2kg",
+        "capacity": "25-50 tonnes/month"
+      },
+      "cocoa": {
+        "name": "Cocoa Beans",
+        "origin": "Ghana",
+        "varieties": "Premium Grade",
+        "season": "Year-round",
+        "specs": "Fermented, High cocoa butter, Fine flavor",
+        "capacity": "5-15 tonnes/month"
+      },
+      "cashew": {
+        "name": "Cashews",
+        "origin": "Ghana",
+        "varieties": "Raw & Processed",
+        "season": "Dec - May",
+        "specs": "Premium kernels, Uniform size, Fresh",
+        "capacity": "5-10 tonnes/month"
+      }
+    },
+    "dried": {
+      "fusion": {
+        "name": "Mango-Pineapple-Coconut Fusion",
+        "description": "Premium blend of dried mango strips, pineapple chunks, and coconut pieces. No added sugars, organic certified.",
+        "sizes": "200g, 500g, 5kg bulk",
+        "certifications": "Organic, EU compliant"
+      }
+    },
+    "snacks": {
+      "bars": {
+        "name": "Fruit Bars",
+        "description": "Portable energy bars in Mango, Passion Fruit, Papaya, and Coconut varieties. Perfect for on-the-go nutrition.",
+        "sizes": "30g bars, 12/24/48 count boxes",
+        "variants": "Plain or chocolate-coated"
+      },
+      "balls": {
+        "name": "Fruit Balls",
+        "description": "Energy-dense, naturally sweet fruit balls. Perfect blend of tropical flavors in convenient bite-sized portions.",
+        "sizes": "250g, 500g, bulk options",
+        "variants": "Plain, dark chocolate, milk chocolate, white chocolate"
+      },
+      "rolls": {
+        "name": "Fruit Rolls/Leather",
+        "description": "Chewy fruit leather with natural flavors. Mango, Pineapple, and mixed varieties available.",
+        "sizes": "Individual wraps, bulk rolls",
+        "variants": "Plain or chocolate-coated"
+      },
+      "cubes": {
+        "name": "Fruit Cubes",
+        "description": "Bite-sized naturally sweet fruit cubes. Perfect for snacking or mixing. Mango, Papaya, and blends.",
+        "sizes": "Bulk and individual packaging",
+        "variants": "Plain, dark chocolate, milk chocolate"
+      }
+    },
+    "labels": {
+      "origin": "Origin",
+      "season": "Season",
+      "specs": "Specs",
+      "capacity": "Capacity",
+      "sizes": "Available Sizes",
+      "certifications": "Certifications",
+      "variants": "Variants",
+      "quote": "Request Quote",
+      "white_label": "White Label",
+      "white_label_inquiry": "White Label Inquiry"
+    },
+    "headers": {
+      "fresh_title": "Fresh Produce",
+      "fresh_desc": "Premium tropical fruits and specialty crops sourced directly from our partner farms in Ghana and Kenya. Exceptional quality, consistent supply, transparent sourcing.",
+      "value_added_title": "Value-Added & Snacks",
+      "value_added_desc": "Premium processed fruits and snack products. Available for direct purchase or as white label options for retail and food service partners."
+    }
+  },
+  "Navigation": {
+    "fresh": "Fresh Produce",
+    "snacks": "Snacks & White Label",
+    "story": "Our Story",
+    "contact": "Contact",
+    "join": "Join Us"
+  }
+}

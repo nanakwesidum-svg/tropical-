@@ -1,0 +1,821 @@
+{
+  "Hero": {
+    "badge": "Directo de África a Europa",
+    "title": "{accent} y Snacks Premium",
+    "accent": "Fruta Tropical",
+    "description": "Mangos, papayas, maracuyá, cultivos especializados y snacks de calidad excepcional, directamente desde Ghana y Kenia a través de nuestro centro en España para distribuidores y minoristas europeos.",
+    "cta_products": "Explorar Productos",
+    "cta_partnership": "Solicitar Asociación",
+    "stat_products": "12+",
+    "stat_products_label": "Productos Premium",
+    "stat_lines": "3",
+    "stat_lines_label": "Líneas de Negocio",
+    "stat_supply": "Todo el año",
+    "stat_supply_label": "Suministro Disponible",
+    "stat_white_label": "Marca Blanca",
+    "stat_white_label_label": "Opciones B2B"
+  },
+  "Products": {
+    "categories": {
+      "fresh": "Productos Frescos",
+      "dried": "Deshidratados y Procesados",
+      "snacks": "Snacks y B2B"
+    },
+    "fresh": {
+      "mango": {
+        "name": "Mangos",
+        "origin": "Ghana",
+        "varieties": "Tommy Atkins, Kent",
+        "season": "Dic - May",
+        "specs": "Tamaño premium, Color dorado, Brix 14-16",
+        "capacity": "20-40 toneladas/mes"
+      },
+      "papaya": {
+        "name": "Papayas",
+        "origin": "Kenia y Ghana",
+        "varieties": "Verde y Amarilla",
+        "season": "Todo el año",
+        "specs": "Tamaño mediano, Pulpa dulce, Madurez óptima",
+        "capacity": "15-30 toneladas/mes"
+      },
+      "passion-fruit": {
+        "name": "Maracuyá",
+        "origin": "Kenia",
+        "varieties": "Purple Passion",
+        "season": "Feb - Oct",
+        "specs": "Grado premium, Alta acidez, Pulpa fresca",
+        "capacity": "5-15 toneladas/mes"
+      },
+      "avocado": {
+        "name": "Aguacates",
+        "origin": "Kenia",
+        "varieties": "Hass",
+        "season": "Jun - Oct",
+        "specs": "Madurez perfecta, Pulpa cremosa, Alto rendimiento",
+        "capacity": "10-25 toneladas/mes"
+      },
+      "pineapple": {
+        "name": "Piñas",
+        "origin": "Ghana",
+        "varieties": "Smooth Cayenne",
+        "season": "Todo el año",
+        "specs": "Exterior dorado, Sabor dulce, 1.5-2kg",
+        "capacity": "25-50 toneladas/mes"
+      },
+      "cocoa": {
+        "name": "Granos de Cacao",
+        "origin": "Ghana",
+        "varieties": "Grado Premium",
+        "season": "Todo el año",
+        "specs": "Fermentado, Alta manteca de cacao, Sabor fino",
+        "capacity": "5-15 toneladas/mes"
+      },
+      "cashew": {
+        "name": "Anacardos",
+        "origin": "Ghana",
+        "varieties": "Crudo y Procesado",
+        "season": "Dic - May",
+        "specs": "Núcleos premium, Tamaño uniforme, Fresco",
+        "capacity": "5-10 toneladas/mes"
+      }
+    },
+    "dried": {
+      "fusion": {
+        "name": "Fusión Mango-Piña-Coco",
+        "description": "Mezcla premium de tiras de mango deshidratado, trozos de piña y trozos de coco. Sin azúcares añadidos, con certificación orgánica.",
+        "sizes": "200g, 500g, 5kg a granel",
+        "certifications": "Orgánico, conforme a la UE"
+      }
+    },
+    "snacks": {
+      "bars": {
+        "name": "Barritas de Fruta",
+        "description": "Barritas energéticas portátiles en variedades de Mango, Maracuyá, Papaya y Coco. Perfectas para una nutrición en movimiento.",
+        "sizes": "Barritas de 30g, cajas de 12/24/48 unidades",
+        "variants": "Natural o recubierto de chocolate"
+      },
+      "balls": {
+        "name": "Bolas de Fruta",
+        "description": "Bolas de fruta energéticamente densas y naturalmente dulces. Mezcla perfecta de sabores tropicales en convenientes porciones del tamaño de un bocado.",
+        "sizes": "250g, 500g, opciones a granel",
+        "variants": "Natural, chocolate negro, chocolate con leche, chocolate blanco"
+      },
+      "rolls": {
+        "name": "Rollos/Láminas de Fruta",
+        "description": "Rollos de fruta masticables con sabores naturales. Variedades de Mango, Piña y mixtas disponibles.",
+        "sizes": "Envoltorios individuales, rollos a granel",
+        "variants": "Natural o recubierto de chocolate"
+      },
+      "cubes": {
+        "name": "Cubos de Fruta",
+        "description": "Cubos de fruta naturalmente dulces del tamaño de un bocado. Perfectos para merendar o mezclar. Mango, Papaya y mezclas.",
+        "sizes": "Envasado a granel e individual",
+        "variants": "Natural, chocolate negro, chocolate con leche"
+      }
+    },
+    "labels": {
+      "origin": "Origen",
+      "season": "Temporada",
+      "specs": "Especificaciones",
+      "capacity": "Capacidad",
+      "sizes": "Tamaños Disponibles",
+      "certifications": "Certificaciones",
+      "variants": "Variantes",
+      "quote": "Solicitar Cotización",
+      "white_label": "Marca Blanca",
+      "white_label_inquiry": "Consulta de Marca Blanca"
+    },
+    "headers": {
+      "fresh_title": "Productos Frescos",
+      "fresh_desc": "Frutas tropicales premium y cultivos especializados procedentes directamente de nuestras granjas asociadas en Ghana y Kenia. Calidad excepcional, suministro constante, abastecimiento transparente.",
+      "value_added_title": "Valor Añadido y Snacks",
+      "value_added_desc": "Frutas procesadas de primera calidad y productos de aperitivo. Disponibles para compra directa o como opciones de marca blanca para socios minoristas y de servicios alimentarios."
+    }
+  },
+  "Portfolio": {
+    "header": {
+      "title": "Nuestra Cartera de Exportación",
+      "description": "Tres categorías de productos que abarcan desde exportaciones frescas hasta productos de alto margen con valor añadido, todo respaldado por la maestría operativa y datos de mercado."
+    },
+    "tropical": {
+      "title": "Frutas Tropicales",
+      "papayas": {
+        "name": "Papayas",
+        "growth": "+14% CAGR",
+        "value": "$805/ton promedio",
+        "description": "Frescas y procesadas; el segmento de papaya verde está creciendo en la UE"
+      },
+      "mangoes": {
+        "name": "Mangos",
+        "growth": "+7% CAGR",
+        "value": "$1,200-$1,300/ton",
+        "description": "Variedades premium; alta demanda en Alemania y el Reino Unido"
+      },
+      "passion": {
+        "name": "Maracuyá",
+        "growth": "+38% (5 años)",
+        "value": "$3,200/ton",
+        "description": "Exóticos exclusivos; 88 millones de euros en importaciones a la UE, centro en los Países Bajos"
+      }
+    },
+    "specialty": {
+      "title": "Cultivos Especializados",
+      "cocoa": {
+        "name": "Cacao",
+        "growth": "Estable, premium",
+        "value": "+50-100% margen de procesamiento",
+        "description": "70% del suministro mundial africano; enfoque en el procesamiento con valor añadido"
+      },
+      "cashews": {
+        "name": "Anacardos",
+        "growth": "Suministro creciente",
+        "value": "Multiplicador de valor",
+        "description": "Creciente producción africana; primas por procesamiento"
+      },
+      "shea": {
+        "name": "Manteca de Karité",
+        "growth": "Demanda creciente",
+        "value": "Segmento orgánico premium",
+        "description": "El mercado orgánico de la UE está creciendo; cosmética y grado alimentario"
+      }
+    },
+    "value_added": {
+      "title": "Productos con Valor Añadido",
+      "superfood": {
+        "name": "Superalimentos en Polvo",
+        "growth": "+38% premium",
+        "value": "+65-100% margen",
+        "description": "Polvos de cacao, mango y plátano; compradores de la UE conscientes de la salud"
+      },
+      "dried": {
+        "name": "Deshidratados y Concentrados",
+        "growth": "Categoría en expansión",
+        "value": "+55% margen",
+        "description": "Mango deshidratado, concentrado de piña, chips de papaya"
+      },
+      "precision": {
+        "name": "Procesamiento de Precisión",
+        "growth": "Habilitado tecnológicamente",
+        "value": "Precios premium",
+        "description": "Secado solar, seguimiento digital, conforme a la EUDR"
+      }
+    },
+    "labels": {
+      "growth": "Crecimiento",
+      "unit_value": "Valor Unitario"
+    },
+    "cta": {
+      "title": "¿Listo para Abastecerse de Exportaciones Africanas Premium?",
+      "description": "Tanto si es un distribuidor que busca un suministro fiable, un inversor que explora oportunidades de crecimiento o un socio tecnológico que fomenta la transparencia, tenemos una cartera para usted.",
+      "button": "Explorar Asociaciones"
+    }
+  },
+  "Contact": {
+    "header": {
+      "title": "Vamos a Asociarnos",
+      "subtitle": "Seleccione su tipo de asociación para comenzar. Trabajamos con distribuidores, minoristas, servicios de catering y socios de marca en toda Europa."
+    },
+    "partner_types": {
+      "distributor": {
+        "title": "Productos Frescos a Granel",
+        "subtitle": "Para Distribuidores y Mayoristas",
+        "description": "Precios por volumen, suministro estacional constante, coordinación logística y gestión de cuentas dedicada."
+      },
+      "retailer": {
+        "title": "Productos Frescos y de Snack",
+        "subtitle": "Para Minoristas y Supermercados",
+        "description": "Suministro directo de productos frescos y snacks de marca con oportunidades de co-branding y espacio en los estantes."
+      },
+      "foodservice": {
+        "title": "Personalizado y Marca Blanca",
+        "subtitle": "Para Servicios de Comida y Marcas",
+        "description": "Productos de snack personalizados, envases de marca, producción a granel, personalización de ingredientes y codesarrollo."
+      }
+    },
+    "form": {
+      "title": "Contáctenos",
+      "labels": {
+        "name": "Su Nombre",
+        "company": "Nombre de la Empresa",
+        "email": "Correo Electrónico",
+        "phone": "Número de Teléfono",
+        "message": "Mensaje"
+      },
+      "placeholders": {
+        "name": "John Smith",
+        "company": "Su Empresa",
+        "email": "john@empresa.com",
+        "phone": "+34 XXX XXX XXX",
+        "message": "Cuéntenos sus necesidades..."
+      },
+      "submit": "Enviar Consulta"
+    },
+    "info": {
+      "title": "Póngase en Contacto",
+      "phone": {
+        "label": "Teléfono",
+        "value": "+34 XXX XXX XXX",
+        "hours": "Lunes - Viernes, 9am - 6pm CET"
+      },
+      "email": {
+        "label": "Correo",
+        "value": "partnerships@tropicaltrader.com",
+        "response_time": "Respondemos en 24 horas"
+      },
+      "address": {
+        "label": "Sede Central",
+        "value": "Madrid, España",
+        "tagline": "Puerta de Europa para los Productos Africanos"
+      },
+      "why_us": {
+        "title": "Por Qué Asociarse Con Nosotros",
+        "point_1": "Abastecimiento africano directo, precios justos",
+        "point_2": "Suministro constante todo el año",
+        "point_3": "Trazabilidad completa y cumplimiento",
+        "point_4": "Soluciones de marca blanca y personalizadas",
+        "point_5": "Soporte de cuenta dedicado"
+      }
+    }
+  },
+  "Advantages": {
+    "header": {
+      "title": "Nuestras Ventajas Competitivas",
+      "description": "Seis pilares que nos distinguen: precisión, asociación, tecnología e impacto."
+    },
+    "pillars": {
+      "ground_to_gate": {
+        "title": "Precisión del Campo a la Puerta",
+        "description": "Trazabilidad completa desde las tierras de cultivo hasta el puerto de la UE. Gemelos digitales, geodatos poligonales y sensores IoT garantizan transparencia y cumplimiento.",
+        "benefits": [
+          "Certificación EUDR libre de deforestación",
+          "Registros en blockchain",
+          "Monitoreo de calidad en tiempo real"
+        ]
+      },
+      "operational": {
+        "title": "Maestría Operativa",
+        "description": "Experiencia en ingeniería industrial combinada con herencia agrícola. Sincronización precisa, optimización logística y minimización de residuos.",
+        "benefits": [
+          "Pérdidas postcosecha mínimas",
+          "Protocolos de madurez óptima",
+          "Planificación de capacidad predictiva"
+        ]
+      },
+      "ecosystem": {
+        "title": "Ecosistema de Asociación Local",
+        "description": "Mucho arraigo en Ghana y Kenia con redes de agricultura cooperativa, procesadores locales y relaciones con la comunidad construidas sobre la base de la confianza.",
+        "benefits": [
+          "Más de 500 agricultores socios",
+          "Contratos de precios justos",
+          "Programas de desarrollo comunitario"
+        ]
+      },
+      "sovereignty": {
+        "title": "Soberanía de las Tierras",
+        "description": "Tierras de cultivo propias en ambos mercados además de asociaciones con productores externos. El control sobre las fuentes de suministro garantiza consistencia y calidad.",
+        "benefits": [
+          "Base de tierra expandible",
+          "Flexibilidad estacional",
+          "Listo para integración regresiva"
+        ]
+      },
+      "tech_chain": {
+        "title": "Cadena de Suministro Tecnológica",
+        "description": "Optimización AI/ML, monitoreo IoT, libros de blockchain y análisis predictivo. Velocidad y agilidad en un mercado dinámico.",
+        "benefits": [
+          "Entrega al mercado en 48 horas",
+          "Previsión de la demanda",
+          "Predicción y prevención de residuos"
+        ]
+      },
+      "impact": {
+        "title": "Marco de Inversión de Impacto",
+        "description": "Toda la logística crea un impacto medible: salarios justos, inversión comunitaria, gestión ambiental y transferencia de tecnología.",
+        "benefits": [
+          "Métricas de impacto certificadas",
+          "Informes ESG",
+          "Alineación de interesados"
+        ]
+      }
+    },
+    "labels": {
+      "benefits": "Beneficios Clave:"
+    },
+    "story": {
+      "title": "Cómo se Une Todo",
+      "step_1": {
+        "title": "Fuente Agrícola",
+        "desc": "Agricultura de precisión con IoT; contratos justos; protocolos de calidad"
+      },
+      "step_2": {
+        "title": "Registro Digital",
+        "desc": "Trazabilidad blockchain; cumplimiento EUDR; datos de calidad/madurez"
+      },
+      "step_3": {
+        "title": "Procesamiento",
+        "desc": "Secado solar o valor añadido; multiplicador de margen; reducción de residuos"
+      },
+      "step_4": {
+        "title": "Mercado UE",
+        "desc": "Precios premium; asociaciones con distribuidores; informes de impacto"
+      }
+    }
+  },
+  "Compliance": {
+    "header": {
+      "title": "Cumplimiento y Stack Tecnológico",
+      "description": "Flujo de seis pasos desde la tierra africana hasta el mercado de la UE: geodatos, gemelos digitales, etiquetas limpias, blockchain y verificación de impacto."
+    },
+    "steps": {
+      "geodata": {
+        "title": "Geodatos Poligonales",
+        "description": "Ubicación y límites de tierras de cultivo verificados por GPS",
+        "details": [
+          "Verificación satelital",
+          "Mapeo de zonas climáticas",
+          "Datos de calidad del suelo"
+        ]
+      },
+      "twin": {
+        "title": "Gemelo Digital",
+        "description": "Monitoreo de granja y cosecha en tiempo real",
+        "details": [
+          "Red de sensores IoT",
+          "Seguimiento de etapas de crecimiento",
+          "Predicción de rendimiento"
+        ]
+      },
+      "clean": {
+        "title": "Etiqueta Limpia",
+        "description": "Cumplimiento EUDR y certificación libre de deforestación",
+        "details": [
+          "Auditoría de no deforestación",
+          "Certificación orgánica",
+          "Comercio justo verificado"
+        ]
+      },
+      "record": {
+        "title": "Registro Blockchain",
+        "description": "Libro de cadena de suministro inmutable",
+        "details": [
+          "Sello de tiempo de cosecha",
+          "Historial de procesamiento",
+          "Seguimiento de transporte"
+        ]
+      },
+      "port": {
+        "title": "Listo para Ingreso a UE",
+        "description": "Cumplimiento total en el puerto de destino",
+        "details": [
+          "Certificados de calidad",
+          "Aprobación fitosanitaria",
+          "Trazabilidad verificada"
+        ]
+      },
+      "impact": {
+        "title": "Certificación de Impacto",
+        "description": "Métricas ESG e impacto validadas",
+        "details": [
+          "Ingresos de agricultores verificados",
+          "Empleos creados",
+          "Huella de carbono"
+        ]
+      }
+    },
+    "tech_partnerships": {
+      "title": "Asociaciones Tecnológicas",
+      "categories": {
+        "traceability": {
+          "label": "Trazabilidad",
+          "benefit": "Transparencia del campo a la puerta para compradores"
+        },
+        "monitoring": {
+          "label": "Monitoreo",
+          "benefit": "Seguimiento de salud y crecimiento en tiempo real"
+        },
+        "analytics": {
+          "label": "Análisis",
+          "benefit": "Optimización en cada nodo de la cadena"
+        },
+        "compliance": {
+          "label": "Cumplimiento",
+          "benefit": "Verificación automatizada de cumplimiento regulatorio"
+        }
+      }
+    },
+    "guarantees": {
+      "title": "Nuestras Garantías de Cumplimiento",
+      "eudr": {
+        "title": "Conforme a EUDR",
+        "desc": "Cada envío está certificado como libre de deforestación con prueba de origen blockchain."
+      },
+      "traceability": {
+        "title": "Trazabilidad 100%",
+        "desc": "Transparencia del campo a la mesa verificada mediante gemelos digitales y blockchain."
+      },
+      "impact": {
+        "title": "Impacto Medido",
+        "desc": "Resultados ESG auditados y verificados: ingresos, empleos, huella de carbono."
+      }
+    }
+  },
+  "Market": {
+    "header": {
+      "title": "Oportunidad de Mercado de Exportación",
+      "description": "Datos reales de FAO, CBI y el Banco Africano de Desarrollo, que explican por qué es el momento de escalar las exportaciones africanas."
+    },
+    "kpis": {
+      "size": {
+        "label": "Tamaño del Mercado Global",
+        "sub": "Frutas tropicales 2025 - nivel más alto a la fecha"
+      },
+      "growth": {
+        "label": "Crecimiento Interanual",
+        "sub": "Crecimiento del mercado global 2024-2025"
+      },
+      "africa_value": {
+        "label": "Valor de Exportación de África",
+        "sub": "12.5% del mercado global - región de más rápido crecimiento"
+      },
+      "africa_growth": {
+        "label": "Tasa de Crecimiento de África",
+        "sub": "Crecimiento de la década (2016-2025) vs. competidores"
+      },
+      "duty": {
+        "label": "Tasa Arancelaria UE",
+        "sub": "Acceso por Acuerdo de Asociación Económica (EPA)"
+      },
+      "margin": {
+        "label": "Margen de Procesamiento",
+        "sub": "Productos con valor añadido vs. primas de fruta fresca"
+      }
+    },
+    "why_africa": {
+      "title": "¿Por qué África Ahora?",
+      "regions": {
+        "title": "Región de Exportación de Más Rápido Crecimiento",
+        "desc": "Las exportaciones africanas de frutas tropicales crecieron un 36% en la década, superando significativamente a Centroamérica y el Caribe. Demanda en máximos históricos."
+      },
+      "tariffs": {
+        "title": "Ventaja de Aranceles Cero",
+        "desc": "Acceso libre de impuestos (EPA) a mercados de la UE frente a competidores. Ventaja de costos directa para precios premium o mayores volúmenes."
+      },
+      "processing": {
+        "title": "Primas por Procesamiento",
+        "desc": "Los productos con valor añadido (harinas, polvos, concentrados) obtienen primas del 50-100%. Mayores márgenes mediante integración regresiva."
+      },
+      "scarcity": {
+        "title": "Escasez en la Cadena",
+        "desc": "Los problemas en el Mar Rojo y retos climáticos crean primas de valor unitario. Posicionamiento premium para abastecimiento alternativo."
+      }
+    }
+  },
+  "CTA": {
+    "header": {
+      "title": "Únase al Puente Comercial",
+      "description": "Tanto si abastece exportaciones africanas premium, invierte en crecimiento o habilita tecnología, tenemos una oportunidad para usted."
+    },
+    "audiences": {
+      "distributors": {
+        "title": "Para Distribuidores",
+        "desc": "Acceda a frutas tropicales africanas premium con trazabilidad garantizada y planificación de suministro estacional.",
+        "button": "Ver Catálogo"
+      },
+      "investors": {
+        "title": "Para Inversores",
+        "desc": "Participe en una oportunidad de exportación de alto crecimiento con impacto medible y operaciones transparentes.",
+        "button": "Programar Llamada"
+      },
+      "tech": {
+        "title": "Para Socios Tecnológicos",
+        "desc": "Integre sus soluciones de trazabilidad, IA o cadena de suministro en nuestra plataforma.",
+        "button": "Explorar APIs"
+      }
+    },
+    "form": {
+      "title": "Póngase en Contacto",
+      "labels": {
+        "name": "Nombre",
+        "email": "Email",
+        "company": "Empresa",
+        "interest": "Estoy interesado en"
+      },
+      "placeholders": {
+        "name": "Su nombre",
+        "email": "su@email.com",
+        "company": "Su empresa"
+      },
+      "options": {
+        "distributor": "Distribución de Productos",
+        "investor": "Oportunidad de Inversión",
+        "tech": "Asociación Tecnológica",
+        "other": "Otro"
+      },
+      "submit": "Enviar Mensaje",
+      "success": "¡Gracias! Nos pondremos en contacto en 24 horas."
+    }
+  },
+  "Navigation": {
+    "fresh": "Productos Frescos",
+    "snacks": "Snacks y Marca Blanca",
+    "story": "Nuestra Historia",
+    "contact": "Contacto",
+    "join": "Únete"
+  },
+  "Sourcing": {
+    "header": {
+      "title": "Del Campo a la Mesa",
+      "description": "Nuestro compromiso con la calidad comienza en el origen. Nos asociamos directamente con agricultores africanos, empleamos rigurosos controles de calidad y aprovechamos la tecnología para garantizar la transparencia y la frescura."
+    },
+    "process": {
+      "partnerships": {
+        "title": "Alianzas Agrícolas",
+        "description": "Trabajamos con granjas familiares y cooperativas agrícolas cuidadosamente seleccionadas en Ghana y Kenia. Las relaciones directas garantizan la calidad, precios justos y prácticas sostenibles.",
+        "details": [
+          "Alianzas plurianuales",
+          "Precios de comercio justo",
+          "Apoyo a la agricultura sostenible"
+        ]
+      },
+      "quality": {
+        "title": "Selección de Calidad",
+        "description": "Rigurosa selección en origen. Cada producto se inspecciona para determinar su madurez, color, sabor y estándares de seguridad alimentaria óptimos. Mantenemos una documentación meticulosa.",
+        "details": [
+          "Seguimiento desde la cosecha hasta la exportación",
+          "Cumplimiento de la norma EUDR",
+          "Certificaciones de seguridad alimentaria"
+        ]
+      },
+      "cold_chain": {
+        "title": "Gestión de la Cadena de Frío",
+        "description": "Desde la granja hasta el puerto europeo, nuestra infraestructura de cadena de frío garantiza la máxima frescura. El almacenamiento a temperatura controlada y el transporte rápido mantienen la integridad del producto.",
+        "details": [
+          "Puente aéreo de 24-48h disponible",
+          "Transporte marítimo refrigerado",
+          "Seguimiento en tiempo real"
+        ]
+      },
+      "traceability": {
+        "title": "Trazabilidad y Cumplimiento",
+        "description": "Trazabilidad digital completa desde la granja hasta la entrega. Cumplimiento de la normativa EUDR, certificaciones fitosanitarias y verificación orgánica cuando procede.",
+        "details": [
+          "Tecnología de gemelo digital",
+          "Cumplimiento de la normativa de la UE",
+          "Auditorías independientes"
+        ]
+      }
+    },
+    "footprint": {
+      "title": "Nuestra Huella Global",
+      "labels": {
+        "role": "Rol",
+        "products": "Productos",
+        "regions": "Regiones de Cultivo",
+        "partnerships": "Alianzas Agrícolas",
+        "partnerships_spain": "Alianzas"
+      },
+      "ghana": {
+        "products": [
+          "Mangos",
+          "Piñas",
+          "Cacao",
+          "Anacardos"
+        ],
+        "regions": "Ashanti, Brong Ahafo, Este",
+        "partnerships": "Más de 12 socios agrícolas"
+      },
+      "kenya": {
+        "products": [
+          "Papayas",
+          "Maracuyá",
+          "Aguacates"
+        ],
+        "regions": "Tierras altas centrales y occidentales",
+        "partnerships": "Más de 8 socios agrícolas"
+      },
+      "spain": {
+        "products": "Centro de Distribución y Procesamiento",
+        "regions": "Madrid, Barcelona, Valencia",
+        "partnerships": "Socios logísticos estratégicos"
+      }
+    },
+    "commitment": {
+      "title": "Nuestro Compromiso de Transparencia",
+      "description": "Cada producto viene con datos de abastecimiento verificables. Conozca la granja, los agricultores y el viaje de cada fruta. Nuestro sistema de trazabilidad digital ofrece una visibilidad completa desde la cosecha hasta la entrega — porque la calidad importa, y también saber de dónde proceden sus alimentos.",
+      "stats": {
+        "traceable": "Productos Trazables",
+        "pricing": "Precios para el Agricultor",
+        "quality": "Sin Compromisos en Calidad"
+      }
+    }
+  },
+  "Footer": {
+    "brand_desc": "Frutas tropicales y snacks premium de Ghana y Kenia, entregados frescos en los mercados europeos. Comercio justo, abastecimiento transparente, calidad excepcional.",
+    "sections": {
+      "products": "Productos",
+      "company": "Empresa",
+      "legal": "Legal"
+    },
+    "links": {
+      "tropical": "Frutas Tropicales",
+      "specialty": "Cultivos Especializados",
+      "value_added": "Valor Añadido",
+      "about": "Sobre Nosotros",
+      "market": "Perspectivas de Mercado",
+      "contact": "Contacto",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "compliance": "Cumplimiento"
+    },
+    "locations": {
+      "ghana_label": "Centro de Producción",
+      "spain_label": "Puerta de Distribución",
+      "kenya_label": "Producción y Procesamiento"
+    },
+    "rights": "Todos los derechos reservados.",
+    "built_with": "Construido con {heart} para el impacto"
+  },
+  "Bridge": {
+    "header": {
+      "title": "El Concepto del Puente",
+      "description": "Tres mercados, una visión: conectar el potencial agrícola de África con la demanda del mercado europeo mediante la excelencia operativa."
+    },
+    "pillars": {
+      "heritage": {
+        "title": "Herencia Agrícola",
+        "description": "Basado en tierras de cultivo locales, respaldado por socios africanos experimentados en Ghana y Kenia."
+      },
+      "tech": {
+        "title": "Integración Tecnológica",
+        "description": "Gemelos digitales, trazabilidad blockchain, cumplimiento EUDR y agricultura de precisión."
+      },
+      "impact": {
+        "title": "Inversión de Impacto",
+        "description": "Despliegue de mejores prácticas como vehículo de transformación económica sostenible."
+      }
+    },
+    "visualization": {
+      "africa": {
+        "label": "África",
+        "sub": "Ghana y Kenia",
+        "role": "Centro de Producción"
+      },
+      "spain": {
+        "label": "España",
+        "sub": "Centro Gateway",
+        "role": "Distribución y Calidad"
+      },
+      "europe": {
+        "label": "Europa",
+        "sub": "Mercados Premium",
+        "role": "Distribución Final"
+      },
+      "via": "Vía",
+      "to": "A"
+    },
+    "values": {
+      "operational": "Operacional",
+      "mastery": "Maestría mediante la precisión y la experiencia local",
+      "solidarity_title": "Solidaridad",
+      "solidarity_desc": "Alianzas locales sólidas basadas en la confianza",
+      "tech_title": "Tecnología",
+      "tech_desc": "Transformación digital para la transparencia"
+    }
+  },
+  "Roadmap": {
+    "header": {
+      "title": "Estrategia de Escalamiento",
+      "subtitle": "Un enfoque por fases desde el piloto hasta el liderazgo mundial en exportaciones, respaldado por la excelencia industrial y los mercados de alto crecimiento."
+    },
+    "phases": {
+      "phase_1": {
+        "title": "Fase 1: Base Operativa",
+        "period": "Meses 1-12",
+        "highlights": [
+          "Asegurar 500ha de tierra de alto rendimiento en Ghana y Kenia",
+          "Desplegar red de sensores IoT y base de Gemelo Digital",
+          "Lograr certificación completa EUDR y Global GAP",
+          "Exportaciones de prueba iniciales: 10 contenedores/mes"
+        ],
+        "metrics": {
+          "efficiency": "65% OEE de Rendimiento",
+          "cac": "<$800/tonelada",
+          "farmer_income": "+20% Base"
+        }
+      },
+      "phase_2": {
+        "title": "Fase 2: Multiplicador de Procesamiento",
+        "period": "Meses 13-36",
+        "highlights": [
+          "Secado solar y procesamiento de snacks en el país",
+          "Lanzamiento del programa de asociación de marca blanca",
+          "Trazabilidad liderada por blockchain (Polygon)",
+          "Escalar a 50 contenedores/mes"
+        ],
+        "metrics": {
+          "margin": "+55% Procesados",
+          "traceability": "100% Polygon",
+          "co2": "30% Reducción"
+        }
+      },
+      "phase_3": {
+        "title": "Fase 3: Dominio del Mercado",
+        "period": "Año 3+",
+        "highlights": [
+          "Expansión a centros en Costa de Marfil y Senegal",
+          "Plataforma de demanda predictiva impulsada por IA",
+          "Lanzamiento de vehículo de inversión de impacto",
+          "Dominio de la red de distribución global"
+        ],
+        "metrics": {
+          "revenue": "$50M+ ARR",
+          "irr": "32% Objetivo",
+          "esg_score": "Top 5% Global"
+        }
+      }
+    },
+    "labels": {
+      "highlights": "Aspectos Clave",
+      "metrics": "Métricas Objetivo"
+    }
+  },
+  "MarketIntelligence": {
+    "header": {
+      "title": "Inteligencia de Mercado y Datos",
+      "description": "Escalamiento basado en evidencia impulsado por datos de la FAO, información de CBI y proyecciones del Banco Africano de Desarrollo."
+    },
+    "charts": {
+      "growth": {
+        "title": "Crecimiento del Mercado de Frutas Tropicales (CAGR)",
+        "desc": "La demanda mundial de exportaciones tropicales premium está superando a los productos tradicionales, con África liderando el crecimiento regional."
+      },
+      "eu_market": {
+        "title": "Penetración en el Mercado de la UE",
+        "desc": "La Unión Europea sigue siendo el mercado premium más robusto del mundo, con ventajas arancelarias estructurales para las regiones EPA."
+      },
+      "seasonal": {
+        "title": "Prima de Demanda Estacional",
+        "desc": "El cronograma de suministro estratégico de Ghana y Kenia alcanza picos en el mercado de la UE durante las ventanas de escasez en otras regiones."
+      }
+    },
+    "insights": {
+      "title": "Información Estratégica del Mercado",
+      "epa": {
+        "title": "Ventaja Libre de Aranceles EPA",
+        "desc": "Kenia y Ghana se benefician de los Acuerdos de Asociación Económica, proporcionando 0% de aranceles frente al 15-20% de algunos competidores NMF."
+      },
+      "climate": {
+        "title": "Resiliencia Climática",
+        "desc": "La diversidad de zonas de cultivo en África Oriental y Occidental proporciona una cobertura natural contra los patrones climáticos localizados."
+      },
+      "logistics": {
+        "title": "Agilidad Logística",
+        "desc": "Nuestro centro en España actúa como un punto de desacoplamiento, permitiendo la entrega justo a tiempo y un control de calidad rápido antes de la distribución final."
+      },
+      "white_label": {
+        "title": "Explosión de Marca Blanca",
+        "desc": "Los minoristas de la UE buscan cada vez más socios de snacks directos de origen para garantizar la transparencia y el margen."
+      }
+    }
+  }
+}

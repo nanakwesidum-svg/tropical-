@@ -1,9 +1,10 @@
 'use client';
 
-import { ArrowRight, Leaf } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useTranslations } from 'next-intl';
 
 export function Hero() {
+  const t = useTranslations('Hero');
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -19,56 +20,58 @@ export function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 mb-6 w-fit">
           <Leaf className="w-4 h-4 text-primary" />
-          <span className="text-sm font-medium text-primary">Direct from Africa to Europe</span>
+          <span className="text-sm font-medium text-primary">{t('badge')}</span>
         </div>
 
         {/* Main Headline */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-foreground text-balance">
-          Premium <span className="text-accent">Tropical Fruit</span> & Snacks
+          {t.rich('title', {
+            accent: (chunks) => <span className="text-accent">{t('accent')}</span>
+          })}
         </h1>
 
         {/* Subheading */}
         <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl text-balance">
-          Exceptional quality mangoes, papayas, passion fruit, specialty crops, and premium snacks—direct from Ghana and Kenya via our Spain hub to European distributors and retailers.
+          {t('description')}
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mb-16">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-primary hover:bg-primary/90 text-white"
             onClick={() => scrollToSection('fresh-produce')}
           >
-            Explore Products
+            {t('cta_products')}
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
+          <Button
+            size="lg"
+            variant="outline"
             className="border-primary/30 text-primary hover:bg-primary/5"
             onClick={() => scrollToSection('contact')}
           >
-            Request Partnership
+            {t('cta_partnership')}
           </Button>
         </div>
 
         {/* Trust indicators */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-border">
           <div>
-            <div className="text-3xl font-bold text-accent mb-2">12+</div>
-            <p className="text-sm text-muted-foreground">Premium Products</p>
+            <div className="text-3xl font-bold text-accent mb-2">{t('stat_products')}</div>
+            <p className="text-sm text-muted-foreground">{t('stat_products_label')}</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-accent mb-2">3</div>
-            <p className="text-sm text-muted-foreground">Business Lines</p>
+            <div className="text-3xl font-bold text-accent mb-2">{t('stat_lines')}</div>
+            <p className="text-sm text-muted-foreground">{t('stat_lines_label')}</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-accent mb-2">Year-round</div>
-            <p className="text-sm text-muted-foreground">Supply Available</p>
+            <div className="text-3xl font-bold text-accent mb-2">{t('stat_supply')}</div>
+            <p className="text-sm text-muted-foreground">{t('stat_supply_label')}</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-accent mb-2">White Label</div>
-            <p className="text-sm text-muted-foreground">B2B Options</p>
+            <div className="text-3xl font-bold text-accent mb-2">{t('stat_white_label')}</div>
+            <p className="text-sm text-muted-foreground">{t('stat_white_label_label')}</p>
           </div>
         </div>
       </div>

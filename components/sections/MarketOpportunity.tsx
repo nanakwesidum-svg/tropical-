@@ -1,62 +1,65 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { Card } from '@/components/ui/card';
-import { 
-  DollarSign, 
-  TrendingUp, 
-  Globe, 
-  Zap, 
-  Award, 
+import {
+  DollarSign,
+  TrendingUp,
+  Globe,
+  Zap,
+  Award,
   Package
 } from 'lucide-react';
 
 export function MarketOpportunity() {
+  const t = useTranslations('Market');
+
   const kpis = [
     {
       icon: DollarSign,
       value: '$12B',
-      label: 'Global Market Size',
-      subtext: 'Tropical fruits 2025 - highest level to date',
+      label: t('kpis.size.label'),
+      subtext: t('kpis.size.sub'),
       color: 'from-accent/20 to-accent/10',
       iconColor: 'text-accent',
     },
     {
       icon: TrendingUp,
       value: '+9%',
-      label: 'YoY Growth',
-      subtext: 'Global tropical fruit market growth 2024-2025',
+      label: t('kpis.growth.label'),
+      subtext: t('kpis.growth.sub'),
       color: 'from-success/20 to-success/10',
       iconColor: 'text-success',
     },
     {
       icon: Globe,
       value: '$1.5B',
-      label: "Africa's Export Value",
-      subtext: '12.5% of global market - fastest growing region',
+      label: t('kpis.africa_value.label'),
+      subtext: t('kpis.africa_value.sub'),
       color: 'from-primary/20 to-primary/10',
       iconColor: 'text-primary',
     },
     {
       icon: Award,
       value: '+36%',
-      label: 'Africa Growth Rate',
-      subtext: 'Decade growth (2016-2025) vs. slower competitors',
+      label: t('kpis.africa_growth.label'),
+      subtext: t('kpis.africa_growth.sub'),
       color: 'from-secondary/20 to-secondary/10',
       iconColor: 'text-secondary',
     },
     {
       icon: Zap,
       value: '0%',
-      label: 'EU Duty Rate',
-      subtext: 'Economic Partnership Agreement (EPA) access',
+      label: t('kpis.duty.label'),
+      subtext: t('kpis.duty.sub'),
       color: 'from-accent/20 to-accent/10',
       iconColor: 'text-accent',
     },
     {
       icon: Package,
       value: '+50-100%',
-      label: 'Processing Margin',
-      subtext: 'Value-added products vs. fresh fruit premium',
+      label: t('kpis.margin.label'),
+      subtext: t('kpis.margin.sub'),
       color: 'from-success/20 to-success/10',
       iconColor: 'text-success',
     },
@@ -68,10 +71,10 @@ export function MarketOpportunity() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Export Market Opportunity
+            {t('header.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real market data from FAO, CBI, and African Development Bank - showing why now is the time to scale African exports.
+            {t('header.description')}
           </p>
         </div>
 
@@ -105,38 +108,38 @@ export function MarketOpportunity() {
 
         {/* Competitive Advantage Section */}
         <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 p-8">
-          <h3 className="text-2xl font-bold text-foreground mb-6">Why Africa Now?</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-6">{t('why_africa.title')}</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                <span className="text-accent">✓</span> Fastest Growing Export Region
+                <span className="text-accent">✓</span> {t('why_africa.regions.title')}
               </h4>
               <p className="text-muted-foreground text-sm">
-                African tropical fruit exports growing 36% over decade, significantly outpacing Central America and Caribbean. Demand for African products at all-time high.
+                {t('why_africa.regions.desc')}
               </p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                <span className="text-accent">✓</span> Zero Tariff Advantage
+                <span className="text-accent">✓</span> {t('why_africa.tariffs.title')}
               </h4>
               <p className="text-muted-foreground text-sm">
-                EPA duty-free access to EU markets vs. competitors. Direct cost advantage enabling premium pricing or higher volumes.
+                {t('why_africa.tariffs.desc')}
               </p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                <span className="text-accent">✓</span> Processing Premiums
+                <span className="text-accent">✓</span> {t('why_africa.processing.title')}
               </h4>
               <p className="text-muted-foreground text-sm">
-                Value-added products (flours, powders, concentrates) command 50-100% premiums. Higher margins through backward integration.
+                {t('why_africa.processing.desc')}
               </p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                <span className="text-accent">✓</span> Supply Chain Scarcity
+                <span className="text-accent">✓</span> {t('why_africa.scarcity.title')}
               </h4>
               <p className="text-muted-foreground text-sm">
-                Red Sea routing issues and climate challenges create unit value premiums. Premium positioning for alternative sourcing.
+                {t('why_africa.scarcity.desc')}
               </p>
             </div>
           </div>

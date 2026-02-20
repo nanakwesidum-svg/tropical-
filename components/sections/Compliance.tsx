@@ -1,68 +1,71 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { Card } from '@/components/ui/card';
 import { CheckCircle, MapPin, Eye, Lock, Zap, Award } from 'lucide-react';
 
 export function Compliance() {
+  const t = useTranslations('Compliance');
+
   const steps = [
     {
       icon: MapPin,
-      title: 'Polygon Geodata',
-      description: 'GPS-verified farmland location and boundaries',
-      details: ['Satellite verification', 'Climate zone mapping', 'Soil quality data'],
+      title: t('steps.geodata.title'),
+      description: t('steps.geodata.description'),
+      details: t.raw('steps.geodata.details'),
     },
     {
       icon: Eye,
-      title: 'Digital Twin',
-      description: 'Real-time farm and harvest monitoring',
-      details: ['IoT sensor network', 'Growth stage tracking', 'Yield prediction'],
+      title: t('steps.twin.title'),
+      description: t('steps.twin.description'),
+      details: t.raw('steps.twin.details'),
     },
     {
       icon: CheckCircle,
-      title: 'Clean Label',
-      description: 'EUDR compliance and deforestation-free cert',
-      details: ['No deforestation audit', 'Organic certification', 'Fair trade verified'],
+      title: t('steps.clean.title'),
+      description: t('steps.clean.description'),
+      details: t.raw('steps.clean.details'),
     },
     {
       icon: Lock,
-      title: 'Blockchain Record',
-      description: 'Immutable supply chain ledger',
-      details: ['Harvest timestamp', 'Processing history', 'Transport tracking'],
+      title: t('steps.record.title'),
+      description: t('steps.record.description'),
+      details: t.raw('steps.record.details'),
     },
     {
       icon: Zap,
-      title: 'EU Entry Ready',
-      description: 'Full compliance at port of destination',
-      details: ['Quality certificates', 'Phytosanitary approved', 'Traceability verified'],
+      title: t('steps.port.title'),
+      description: t('steps.port.description'),
+      details: t.raw('steps.port.details'),
     },
     {
       icon: Award,
-      title: 'Impact Certification',
-      description: 'ESG and impact metrics validated',
-      details: ['Farmer income verified', 'Jobs created', 'Carbon footprint'],
+      title: t('steps.impact.title'),
+      description: t('steps.impact.description'),
+      details: t.raw('steps.impact.details'),
     },
   ];
 
   const technologies = [
     {
-      category: 'Traceability',
+      category: t('tech_partnerships.categories.traceability.label'),
       tech: ['Blockchain (Polygon)', 'QR Codes', 'RFID Tags'],
-      benefit: 'Ground-to-gate transparency for buyers',
+      benefit: t('tech_partnerships.categories.traceability.benefit'),
     },
     {
-      category: 'Monitoring',
+      category: t('tech_partnerships.categories.monitoring.label'),
       tech: ['IoT Sensors', 'Satellite Imagery', 'Drone Surveys'],
-      benefit: 'Real-time farm health and growth tracking',
+      benefit: t('tech_partnerships.categories.monitoring.benefit'),
     },
     {
-      category: 'Analytics',
+      category: t('tech_partnerships.categories.analytics.label'),
       tech: ['AI/ML Forecasting', 'Demand Sensing', 'Waste Prediction'],
-      benefit: 'Optimization at every supply chain node',
+      benefit: t('tech_partnerships.categories.analytics.benefit'),
     },
     {
-      category: 'Compliance',
+      category: t('tech_partnerships.categories.compliance.label'),
       tech: ['EUDR Audit', 'Deforestation Detection', 'Certification APIs'],
-      benefit: 'Automated regulatory compliance verification',
+      benefit: t('tech_partnerships.categories.compliance.benefit'),
     },
   ];
 
@@ -72,10 +75,10 @@ export function Compliance() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Compliance & Technology Stack
+            {t('header.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Six-step flow from African farmland to EU market: geodata, digital twins, clean labels, blockchain, and impact verification.
+            {t('header.description')}
           </p>
         </div>
 
@@ -103,7 +106,7 @@ export function Compliance() {
                           {step.description}
                         </p>
                         <ul className="space-y-1">
-                          {step.details.map((detail, i) => (
+                          {(step.details as string[]).map((detail, i) => (
                             <li
                               key={i}
                               className="text-xs text-muted-foreground flex items-start gap-2"
@@ -130,7 +133,7 @@ export function Compliance() {
         {/* Technology Stack */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-foreground mb-6">
-            Technology Partnerships
+            {t('tech_partnerships.title')}
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {technologies.map((tech, idx) => (
@@ -164,31 +167,31 @@ export function Compliance() {
         {/* Compliance Guarantees */}
         <Card className="bg-gradient-to-r from-success/10 to-secondary/10 border-success/20 p-8">
           <h3 className="text-2xl font-bold text-foreground mb-6">
-            Our Compliance Guarantees
+            {t('guarantees.title')}
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div>
               <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <span className="text-success text-lg">✓</span> EUDR Compliant
+                <span className="text-success text-lg">✓</span> {t('guarantees.eudr.title')}
               </h4>
               <p className="text-muted-foreground text-sm">
-                Every shipment is deforestation-free certified with blockchain proof of origin.
+                {t('guarantees.eudr.desc')}
               </p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <span className="text-success text-lg">✓</span> Traceability 100%
+                <span className="text-success text-lg">✓</span> {t('guarantees.traceability.title')}
               </h4>
               <p className="text-muted-foreground text-sm">
-                Farm-to-table transparency verified through digital twins and blockchain ledger.
+                {t('guarantees.traceability.desc')}
               </p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <span className="text-success text-lg">✓</span> Impact Measured
+                <span className="text-success text-lg">✓</span> {t('guarantees.impact.title')}
               </h4>
               <p className="text-muted-foreground text-sm">
-                ESG outcomes audited and verified: farmer income, jobs, carbon footprint.
+                {t('guarantees.impact.desc')}
               </p>
             </div>
           </div>
