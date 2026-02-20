@@ -4,117 +4,117 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Tropical Tech Palette - Light Mode */
-  --background: #FFFFFF;
+  /* Tropical Quality Brand Palette - Light Mode */
+  --background: #F9F5F0;
   --foreground: #1A1A1A;
-  --card: #F0F4F8;
-  --card-foreground: #0F2438;
+  --card: #FFFFFF;
+  --card-foreground: #1B5E3F;
   --popover: #FFFFFF;
   --popover-foreground: #1A1A1A;
   
-  /* Primary - Deep Ocean Blue */
-  --primary: #0F4C75;
+  /* Primary - Deep Jungle Green */
+  --primary: #1B5E3F;
   --primary-foreground: #FFFFFF;
   
-  /* Secondary - Tech Blue */
-  --secondary: #3282B8;
+  /* Secondary - Sunset Gold */
+  --secondary: #E8A83A;
   --secondary-foreground: #FFFFFF;
   
-  /* Accent - Mango Orange */
-  --accent: #FF8C00;
+  /* Accent - Papaya Orange */
+  --accent: #F97316;
   --accent-foreground: #FFFFFF;
   
-  /* Success/Growth - Green */
-  --success: #00C853;
+  /* Success/Growth - Tropical Green */
+  --success: #16A34A;
   --success-foreground: #FFFFFF;
   
   /* Muted */
-  --muted: #E0E7F1;
-  --muted-foreground: #656B7A;
+  --muted: #E5DDD2;
+  --muted-foreground: #6B6B6B;
   
   /* Destructive */
-  --destructive: #EF4444;
+  --destructive: #DC2626;
   --destructive-foreground: #FFFFFF;
   
   /* Border & Input */
-  --border: #E0E7F1;
-  --input: #F0F4F8;
-  --ring: #3282B8;
+  --border: #E5DDD2;
+  --input: #FFFFFF;
+  --ring: #1B5E3F;
   
   /* Charts */
-  --chart-1: #FF8C00;
-  --chart-2: #00C853;
-  --chart-3: #3282B8;
-  --chart-4: #0F4C75;
-  --chart-5: #FFB347;
+  --chart-1: #F97316;
+  --chart-2: #16A34A;
+  --chart-3: #E8A83A;
+  --chart-4: #1B5E3F;
+  --chart-5: #D97706;
   
   --radius: 0.625rem;
   
   /* Sidebar */
-  --sidebar: #F0F4F8;
-  --sidebar-foreground: #0F2438;
-  --sidebar-primary: #0F4C75;
+  --sidebar: #F9F5F0;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-primary: #1B5E3F;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #FF8C00;
+  --sidebar-accent: #F97316;
   --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E0E7F1;
-  --sidebar-ring: #3282B8;
+  --sidebar-border: #E5DDD2;
+  --sidebar-ring: #1B5E3F;
 }
 
 .dark {
-  /* Tropical Tech Palette - Dark Mode */
-  --background: #0F2438;
-  --foreground: #F0F4F8;
-  --card: #1A3A52;
-  --card-foreground: #E0E7F1;
-  --popover: #1A3A52;
-  --popover-foreground: #F0F4F8;
+  /* Tropical Quality Brand Palette - Dark Mode */
+  --background: #1A1A1A;
+  --foreground: #F9F5F0;
+  --card: #2D2D2D;
+  --card-foreground: #E8A83A;
+  --popover: #2D2D2D;
+  --popover-foreground: #F9F5F0;
   
   /* Primary */
-  --primary: #3282B8;
-  --primary-foreground: #0F2438;
+  --primary: #3B8660;
+  --primary-foreground: #1A1A1A;
   
   /* Secondary */
-  --secondary: #4A9FD8;
-  --secondary-foreground: #0F2438;
+  --secondary: #F4B860;
+  --secondary-foreground: #1A1A1A;
   
   /* Accent */
-  --accent: #FF8C00;
-  --accent-foreground: #0F2438;
+  --accent: #FF9E4A;
+  --accent-foreground: #1A1A1A;
   
   /* Success */
-  --success: #00E67E;
-  --success-foreground: #0F2438;
+  --success: #34D399;
+  --success-foreground: #1A1A1A;
   
   /* Muted */
-  --muted: #2B4A66;
-  --muted-foreground: #A0B0C0;
+  --muted: #4A4A4A;
+  --muted-foreground: #BFBFBF;
   
   /* Destructive */
   --destructive: #FF6B6B;
-  --destructive-foreground: #0F2438;
+  --destructive-foreground: #1A1A1A;
   
   /* Border & Input */
-  --border: #2B4A66;
-  --input: #1A3A52;
-  --ring: #3282B8;
+  --border: #4A4A4A;
+  --input: #2D2D2D;
+  --ring: #3B8660;
   
   /* Charts */
-  --chart-1: #FF8C00;
-  --chart-2: #00E67E;
-  --chart-3: #4A9FD8;
-  --chart-4: #3282B8;
-  --chart-5: #FFB347;
+  --chart-1: #FF9E4A;
+  --chart-2: #34D399;
+  --chart-3: #F4B860;
+  --chart-4: #3B8660;
+  --chart-5: #FBBF24;
   
   /* Sidebar */
-  --sidebar: #1A3A52;
-  --sidebar-foreground: #F0F4F8;
-  --sidebar-primary: #3282B8;
-  --sidebar-primary-foreground: #F0F4F8;
-  --sidebar-accent: #FF8C00;
-  --sidebar-accent-foreground: #0F2438;
-  --sidebar-border: #2B4A66;
-  --sidebar-ring: #4A9FD8;
+  --sidebar: #2D2D2D;
+  --sidebar-foreground: #F9F5F0;
+  --sidebar-primary: #3B8660;
+  --sidebar-primary-foreground: #F9F5F0;
+  --sidebar-accent: #FF9E4A;
+  --sidebar-accent-foreground: #1A1A1A;
+  --sidebar-border: #4A4A4A;
+  --sidebar-ring: #3B8660;
 }
 
 @theme inline {

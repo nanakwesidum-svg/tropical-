@@ -9,10 +9,9 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: 'Products', href: '#products' },
-    { label: 'Market Insights', href: '#market' },
-    { label: 'Our Approach', href: '#approach' },
-    { label: 'Impact', href: '#impact' },
+    { label: 'Fresh Produce', href: '#fresh-produce' },
+    { label: 'Snacks & White Label', href: '#snacks' },
+    { label: 'Our Story', href: '#sourcing' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -23,10 +22,10 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">🌍</span>
+              <span className="text-primary-foreground font-bold text-lg">🥭</span>
             </div>
             <span className="font-bold text-lg text-primary hidden sm:inline">
-              Afro-Iberian Bridge
+              Tropical Fruits
             </span>
           </Link>
 

@@ -15,14 +15,14 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-lg">🌍</span>
+                <span className="text-lg">🥭</span>
               </div>
               <span className="font-bold text-lg">
-                Afro-Iberian Bridge
+                Tropical Fruit Trader
               </span>
             </div>
             <p className="text-white/70 text-sm mb-6">
-              Connecting Africa's agricultural excellence with Europe's premium markets through operational mastery and technology.
+              Premium tropical fruits and snacks from Ghana and Kenya, delivered fresh to European markets. Fair trade, transparent sourcing, exceptional quality.
             </p>
             <div className="flex gap-4">
               <a
