@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { MapPin, Calendar, TrendingUp } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { freshProducts } from '@/lib/data/products';
 
 export function FreshProduce() {

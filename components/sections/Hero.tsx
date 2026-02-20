@@ -1,6 +1,8 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Leaf, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export function Hero() {
   const t = useTranslations('Hero');

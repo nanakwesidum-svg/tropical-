@@ -5,6 +5,7 @@ import { CheckCircle, MapPin, Zap, Shield, Leaf } from 'lucide-react';
 
 export function SourcingStory() {
   const t = useTranslations('Sourcing');
+  const tHero = useTranslations('Hero');
 
   const steps = [
     {
@@ -152,7 +153,7 @@ export function SourcingStory() {
               <p className="text-sm text-foreground font-medium">{t('commitment.stats.traceable')}</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-accent mb-2">{t('Hero.stat_white_label').split(' ')[0]}</p>
+              <p className="text-3xl font-bold text-accent mb-2">{tHero('stat_white_label').split(' ')[0]}</p>
               <p className="text-sm text-foreground font-medium">{t('commitment.stats.pricing')}</p>
             </div>
             <div>
